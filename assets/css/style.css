@@ -1,3 +1,5 @@
+/*Universal selector*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 
-
+/*Element selectors*/
 body {
     background-color: #d9dcd6;
 }
@@ -17,6 +19,7 @@ p {
 }
 
 
+/*classes and ids */
 
 .header {
     display: flex;
@@ -26,7 +29,7 @@ p {
     background-color: #2a607c;
     color: #ffffff;
 }
-
+ /*tags withing the header CSS styling*/
 .header a{
     color: #ffffff;
     text-decoration: none;
@@ -62,8 +65,8 @@ p {
 }
 
 
-
-.hero {
+/*Photo of people sitting at desk styling*/
+#group_photo {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -72,6 +75,7 @@ p {
     background-position: center;
 }
 
+/*reusable classes to float images left or right*/
 .float-left {
     float: left;
     margin-right: 25px;
@@ -82,12 +86,44 @@ p {
     margin-left: 25px;
 }
 
+
+/*Main content section*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+.rows{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.rows img {
+    max-height: 200px;
+}
+
+.rows h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*reusable classes to float images left or right in the content section*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*aside benefits styling*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -117,30 +153,7 @@ p {
 }
 
 
-
-
-
-
-.rows{
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.rows img {
-    max-height: 200px;
-}
-
-.rows h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-
-#footer {
+.footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
